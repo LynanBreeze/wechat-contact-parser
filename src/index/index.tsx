@@ -31,7 +31,6 @@ const formatRemark = (string: string): FormatedRemark => {
 };
 
 const formatAvatar = (string: string): string[] => {
-  // return string.split('"')[0].match(/http(s)?:\/\/\S+/g);
   return string
     .replace(/[\u0000-\u001f�]/g, " ")
     .split('"')[0]
